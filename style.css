@@ -1,0 +1,160 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.book-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items horizontally */
+    gap: 20px;
+}
+
+.book-item {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 30px); /* Full width on small screens, allow for some spacing */
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    text-align: center;
+}
+
+.pub{
+    background-color:aqua;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: calc(100% - 30px); /* Full width on small screens, allow for some spacing */
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    text-align: center;
+}
+
+.book-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+.book-item:hover img {
+  transform: scale(1.1);
+}
+
+
+.book-item h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.book-item p {
+    margin-bottom: 5px;
+}
+
+.read-more-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.read-more-btn:hover {
+    background-color: #0056b3;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 30px;
+}
+
+/* Media Query for tablets */
+@media (min-width: 600px) {
+    .book-item {
+        width: calc(50% - 30px);
+    }
+
+    .book-grid {
+        justify-content: space-around;
+    }
+}
+
+/* Media Query for desktops */
+@media (min-width: 900px) {
+    .book-item {
+        width: calc(33.33% - 30px);
+    }
+}
+
+/* Larger screens */
+@media (min-width: 1200px){
+    .book-item {
+        width: calc(25% - 30px);
+    }
+}
+/* Add the following CSS styles to your style.css */
+
+.book-details {
+    display: flex;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    gap: 20px;
+    flex-direction: column; /* Stack vertically on small screens */
+}
+
+.book-details-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.book-details h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.book-details p {
+  line-height: 1.6;
+}
+
+/* Tablet and larger screen */
+@media (min-width: 768px) {
+    .book-details{
+      flex-direction: row;
+    }
+    .book-details-img {
+      max-width: 300px;
+      margin-right: 20px;
+    }
+}
